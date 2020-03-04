@@ -21,8 +21,8 @@
 		<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
 	</div>
 		
-			<a class="bots" href="index.php?navigation=update.php?id=<?php echo $id ?>">Update</a>
-			<a class="bots" href="index.php?navigation=form_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
+			<a class="bots" href="index.php?update.php?id=<?php echo $id ?>">Update</a>
+			<a class="bots" href="index.php?form_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
 	
 	</div>
   </div>
