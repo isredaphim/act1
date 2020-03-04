@@ -22,9 +22,9 @@
 	<select name="category">
 	<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
 		<?php
-		foreach($list as $page){
+		foreach($list as $result){
 		?>
-			<option value="<?php echo $page['id']?>"><?php echo $page['name']?></option>
+			<option value="<?php echo $result['id']?>"><?php echo $result['name']?></option>
 		<?php
 		}
 		?>
