@@ -21,7 +21,7 @@
 		<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
 	</div>
 		
-			<a class="bots" href="update.php?id=<?php echo $id ?>">Update/Edit</a>
+			<a href="update.php?id=<?php echo $id ?>">Update</a></td>
 			<a class="bots" href="form_delete.php?id=<?php echo $id ?>">Delete/Trash</a>
 	
 	</div>
