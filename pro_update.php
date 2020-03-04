@@ -3,7 +3,7 @@ $id = $_GET['id'];
 $name = $_POST['name'];
 $price = $_POST['price'];
 $description = $_POST['description'];
-$category = $_POST['category_name'];
+$category = $_POST['category'];
 $date = '2019-06-01 00:35:07';
 
 $curl = curl_init();
@@ -28,4 +28,4 @@ curl_setopt_array($curl, array(
   
   curl_close($curl);
   echo $response;
-  header("location:index.php?page=list");
+  header("location:index.php?navigation=product");
