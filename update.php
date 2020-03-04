@@ -7,7 +7,7 @@
 	//category
 	$json2 = file_get_contents('http://rdapi.herokuapp.com/category/read.php');
 	$data2 = json_decode($json2,true);
-	$list = $data2['records'];
+	$category = $data2['records'];
 ?>
 <html> 
     <head>  
@@ -22,9 +22,9 @@
 	<select name="category">
 	<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
 		<?php
-		foreach($list as $result){
+		foreach($category as $cview){
 		?>
-			<option value="<?php echo $result['id']?>"><?php echo $result['name']?></option>
+			<option value="<?php echo $cview['id']?>"><?php echo $cview['name']?></option>
 		<?php
 		}
 		?>
