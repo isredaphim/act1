@@ -22,7 +22,7 @@
 	<select name="category">
 	<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
 		<?php
-		foreach($category as $cview){
+		foreach($category as $page){
 		?>
 			<option value="<?php echo $page['id']?>"><?php echo $page['name']?></option>
 		<?php
