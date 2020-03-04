@@ -30,6 +30,7 @@
 		?>
 		</select>
 	<input type="submit" name="submit" value="submit"/>
-
+echo $response;
+header("location:index.php?page=list");
 </form>
 </html>
