@@ -24,7 +24,7 @@
 		<?php
 		foreach($category as $cview){
 		?>
-			<option value="<?php echo $cview['id']?>"><?php echo $cview['name']?></option>
+			<option value="<?php echo $page['id']?>"><?php echo $page['name']?></option>
 		<?php
 		}
 		?>
